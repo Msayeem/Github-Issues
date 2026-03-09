@@ -11,6 +11,7 @@ Ans: 1. var is hoisted, let and const is also hoisted but in temporal deadzone.
 
 
  2️⃣ What is the spread operator (...)?
+ 
  Ans: The spread operator takes something iterable and spreads its contents.
 
 
