@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            font-family: "Geist", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+<section class="w-[50%] mx-auto grid  justify-center py-20">
+<div class="text-center mb-[24px]">
+    <img class="mx-auto mb-[24px]" src="assets/github-logo.png">
+    <h2 class="font-semibold text-[24px] text-[#1F2937] mb-[4px]">GitHub Issues Tracker</h2>
+<p class="text-[#64748B] text-[16px]">Sign in to manage your issues</p>
+</div>
+
+ <div>
+<fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+  <legend class="fieldset-legend">Sign In</legend>
+
+  <label class="label text-[16px] font-medium text-[#1F2937]">Username</label>
+  <input id="in1" type="text" class="input " placeholder="Enter Username" />
+<h3 class="text-[14px] text-[#4A00FF] mb-[16px]">Default: admin</h3>
+
+  <label class="label text-[16px] font-medium text-[#1F2937]">Password</label>
+  <input id="in2" type="password" class=" input" placeholder="Enter Password" />
+<h3 class="text-[14px] text-[#4A00FF] mb-[16px]">Default: admin123</h3>
+
+  <button id="b1" class="btn btn-primary mt-4">Sign In</button>
+</fieldset>
+ </div>
+</section>
+
+
+
+    <script>
+        document.getElementById('b1').addEventListener('click', 
+            function(){
+                let g1=document.getElementById('in1').value.trim().toLowerCase();
+                let g2=document.getElementById('in2').value;
+            if(g1==='admin' && g2==='admin123'){
+                window.location.href='rtx.html'
+            }
+            else{
+                alert('Wrong details')
+                return;
+            }
+            }
+        )
+    </script>
+</body>
+</html>
