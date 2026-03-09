@@ -125,7 +125,7 @@ let gre=isOpen ? 'badge badge-success' : 'badge badge-error';
 
     <h2 class="mb-[24px] text-[16px] text-[#64748B]">${datas.description}</h2>
 
-    <div class="flex items-center justify-center gap-70 mb-[24px]">
+    <div class="flex items-center justify-center gap-45 lg:gap-70 mb-[24px]">
     <div><h3 class="text-[16px] text-[#64748B]">Assignee:</h3><h3 class="font-semibold text-[16px] text-[#1F2937]">${datas.assignee}</h3></div>
     <div><h3 class="text-[16px] text-[#64748B]">Priority:</h3><h3 class="badge badge-outline badge-error">${datas.priority}</h3></div>
     </div>
